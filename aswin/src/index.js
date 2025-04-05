@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
+import TodoApp from "./TodoApp";
+import Timer from "./FunTimer";
+import ExpenseTracker from "./ReducerHook";
+import AutoFocusInput from "./RefHook";
+import UseFetch from "./CustomHook";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <UseFetch/>
+    <AutoFocusInput/>
+    <ExpenseTracker/>
+    <Timer/>
+    <TodoApp/>
+    <App/>
   </React.StrictMode>
 );
 
